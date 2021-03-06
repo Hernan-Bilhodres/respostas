@@ -52,30 +52,34 @@
                 Aqui constará o formulário de contato. Esse formulário deve possuir os seguintes campos:
             </p>
             <ul>
-                <li><strong>nome-completo</strong>: deve capturar um texto de única linha de até 120 caracteres, obrigatório.</li>
-                <li><strong>email</strong>: deve capturar um e-mail válido, obrigatório.</li>
-                <li>
-                    <strong>assunto</strong>: deve escolher um assunto de uma caixa de seleção, obrigatório. As opções são:
+                <form method="Post" action="agradecimento.html">
+                    <li><strong>nome-completo:</strong> <input type="text" name="nome-completo" size="120" required></li>
+                    <li><strong>email:</strong> <input type="email" name="email" required></li>
+                
+            </ul>
+                    <strong>assunto:</strong> deve escolher um assunto de uma caixa de seleção, obrigatório. As opções são:
                     <ul>
-                        <li><em>Bug (B)</em></li>
-                        <li><em>Reclamação (R)</em></li>
-                        <li><em>Sugestão (S)</em></li>
+                        <em><INPUT TYPE="RADIO" NAME="OPCAO" VALUE="bug" required> BUG</em><br>
+                        <em><INPUT TYPE="RADIO" NAME="OPCAO" VALUE="rec" required> Reclamação</em><br>
+                        <em><INPUT TYPE="RADIO" NAME="OPCAO" VALUE="sug" required> Sugestão</em><br>
                     </ul>
                 </li>
-                <li><strong>mensagem</strong>: deve capturar uma mensagem de várias linhas de até 500 caracteres, obrigatório.</li>
+                <li><strong>mensagem: </strong><br>
+                <textarea rows="10"maxlength = "500" required></textarea></li>
                 <li>
-                    <strong>conheceu</strong>: deve capturar uma única opção de como conheceu a impacta de uma lista de opções, opcional. Os valores são:
+                    <strong>conheceu</strong>: Como você conheceu a Impacta: 
                     <ul>
-                        <li><em>Google (G)</em></li>
-                        <li><em>Indicação (I)</em></li>
-                        <li><em>Propaganda (P)</em></li>
-                        <li><em>Outros (O)</em></li>
+                        <em><INPUT TYPE="RADIO" NAME="OPCAO2" VALUE="G" >Google</em><br>
+                        <em><INPUT TYPE="RADIO" NAME="OPCAO2" VALUE="I" >Indicação </em><br>
+                        <em><INPUT TYPE="RADIO" NAME="OPCAO2" VALUE="P" >Propaganda </em><br>
+                        <em><INPUT TYPE="RADIO" NAME="OPCAO2" VALUE="O" >Outros </em><br>
                     </ul>
                 </li>
             </ul>
             <p>
-                Ao enviar a mensagem, deve redirecionar a página para a <a href="agradecimento.html">página de agradecimento</a>.
+                <input type="submit" value="Enviar">
             </p>
+                </form>
         </main>
         <footer>
             <ul>
