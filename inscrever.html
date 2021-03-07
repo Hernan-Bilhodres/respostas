@@ -53,15 +53,14 @@
                 Esse formulário deve capturar os seguintes campos:
             </p>
             <ul>
-                <li><strong>usuario</strong>: Criação de um usuário único, no máximo 50 caracteres, obrigatório.</li>
-                <li><strong>nome</strong>: Campo de texto simples, máximo 120 caracteres, obrigatório.</li>
-                <li><strong>email</strong>: Campo de e-mail válido, obrigatório.</li>
-                <li><strong>celular</strong>: Campo de texto simples, opcional.</li>
+                <form method="POST" action="index.html">
+                    <li><strong>usuario: </strong><input type="text" name="nome-usuario" maxlength="50" required>.</li>
+                    <li><strong>nome: </strong><input type="text" name="nome-completo" maxlength="120" required></li>
+                    <li><strong>email: </strong><input type="email" name="email" required></li>
+                    <li><strong>celular: </strong><input type="text" name="nome-usuario" maxlength="13" ></li>
+                    <input type="submit" value="Inscrever-se">
+                </form>
             </ul>
-            <p>
-                Ao inscrever, deve encaminhar para a <a href="index.html">home</a>.
-            </p>
-
         </main>
         <footer>
             <ul>
